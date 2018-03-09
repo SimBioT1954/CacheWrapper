@@ -1,0 +1,20 @@
+{
+    "name": "simbiot1954/phalcon-cache-wrapper",
+    "description": "Phalcon framework cache adapter",
+    "authors": [
+        {
+            "name": "Maxim Zorin",
+            "email": "zorinmaksim2012@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0",
+        "ext-phalcon": ">= 3.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Phalcon\\Cache\\Backend\\CacheWrapper\\": "src/CacheWrapper/"
+        }
+    }
+}
