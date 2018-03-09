@@ -1,5 +1,6 @@
 {
     "name": "simbiot1954/phalcon-cache-wrapper",
+    "license": "MIT",
     "description": "Phalcon framework cache adapter",
     "authors": [
         {
@@ -7,7 +8,7 @@
             "email": "zorinmaksim2012@mail.ru"
         }
     ],
-    "minimum-stability": "dev",
+  "minimum-stability": "stable",
     "require": {
         "php": ">=7.2.0",
         "ext-phalcon": ">= 3.0.0"
@@ -16,5 +17,10 @@
         "psr-0": {
             "Phalcon\\Cache\\Backend\\CacheWrapper\\": "src/CacheWrapper/"
         }
+    },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/SimBioT1954/CacheWrapper.git"
     }
 }
