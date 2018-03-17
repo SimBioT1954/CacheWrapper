@@ -109,7 +109,7 @@ class CacheProcessor
 
         if (!$item->isHit()) {
 
-            $data = $callable();
+            $data = $callable($this->getDb());
 
             $item->set($data)->expiresAfter($time);
             $this->cache->save($item);
