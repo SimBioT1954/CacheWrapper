@@ -108,8 +108,9 @@ class CacheProcessor
         $item = $this->cache->getItem($key);
 
         if (!$item->isHit()) {
-
-            $data = $callable($this->getDb());
+            
+            \Closure::bind($callable, $this);
+            $data = $callable();
 
             $item->set($data)->expiresAfter($time);
             $this->cache->save($item);
