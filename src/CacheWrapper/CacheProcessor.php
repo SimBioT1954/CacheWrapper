@@ -109,7 +109,7 @@ class CacheProcessor
 
         if (!$item->isHit()) {
             
-            \Closure::bind($callable, $this);
+            $callable = \Closure::bind($callable, $this);
             $data = $callable();
 
             $item->set($data)->expiresAfter($time);
